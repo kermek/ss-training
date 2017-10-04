@@ -1,9 +1,9 @@
 package com.softserve.ita;
 
-import org.testng.annotations.DataProvider;
+//import org.testng.annotations.DataProvider;
 
 public class TestData {
-	@DataProvider(name="SearchProvider")
+	// Data Provider "SearchProvider"
 	public Object[][] getSearchData() {
 		return new Object[][] { 
 			{ "query A", "1 result" },

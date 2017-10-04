@@ -1,14 +1,14 @@
 package com.softserve.ita.utils;
 
-import io.qameta.allure.Attachment;
+//import io.qameta.allure.Attachment;
 
 public class Attachments {
-	@Attachment
+//	@Attachment
 	public String savePageContent(String pageHtml) {
 	    return pageHtml;
 	}
 
-	@Attachment(value = "Page screenshot", type = "image/png")
+//	@Attachment(value = "Page screenshot", type = "image/png")
 	public byte[] saveScreenshot(byte[] screenShot) {
 	    return screenShot;
 	}
