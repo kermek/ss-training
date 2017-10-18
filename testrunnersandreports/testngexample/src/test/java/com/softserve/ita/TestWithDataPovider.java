@@ -35,18 +35,4 @@ public class TestWithDataPovider {
 			{ "Test", "5 results" }
 		};
 	}
-	
-	@DataProvider(name="SearchProvider3")
-	public Object[][] getSearchData2(ITestContext context) {
-		for (String group : context.getIncludedGroups()) {
-			if(group.equals("A")){
-				
-			}
-		}
-		return new Object[][] { 
-			{ "Lorem", "1 result" },
-			{ "Ipsum", "0 results" },
-			{ "Test", "5 results" }
-		};
-	}
 }

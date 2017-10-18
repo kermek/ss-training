@@ -8,31 +8,31 @@ package com.softserve.ita;
 
 
 public class FeaturesTest {
-	// Epic - Search 
-	// Feature - Simple Search
-	// Story - Search document by name
-	public void searchByNameTest() { 
+	// Epic - User Management 
+	// Feature - Add new user
+	// Story - Create admin user
+	public void createAdminUserTest() { 
 		System.out.println("searchByNameTest");
 	}
 	
-	// Epic - Search 
-	// Feature - Simple Search
-	// Story - Search document by content
-	public void searchByContentTest() {
+	// Epic - User Management 
+	// Feature - Add new user
+	// Story - Create guest user
+	public void createGuestUserTest() {
 		System.out.println("searchByContentTest");
 	}
 	
-	// Epic - Search 
-	// Feature - Advanced Search
-	// Story - Search document by modified date
-	public void advancedSearchByDateModifiedTest() { 
+	// Epic - User Management 
+	// Feature - Delete user
+	// Story - Delete admin user
+	public void deleteAdminUserTest() { 
 		System.out.println("advancedSearchByDateModifiedTest");
 	}
 	
-	// Epic - Search 
-	// Feature - Advanced Search
-	// Story - Search document by created date
-	public void advancedSearchByDateCreatedTest() {
+	// Epic - User Management 
+	// Feature - Delete user
+	// Story - Delete guest user
+	public void deleteGuestUserTest() {
 		System.out.println("advancedSearchByDateCreatedTest");
 	}
 }

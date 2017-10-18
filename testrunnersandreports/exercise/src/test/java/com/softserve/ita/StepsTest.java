@@ -9,8 +9,8 @@ public class StepsTest {
 	// Test with steps
 	public void testWithSteps() {
 		openUrl("http://google.com");
-		login("admin", "12345");
-		verifyUserIsLoggedIn();
+		performSearch("Allure");
+		assertResultCount(5000);
 	}
 	
 	// Step "Open {url} url."
@@ -18,13 +18,13 @@ public class StepsTest {
 		System.out.println("Opening url " + url);
 	}
 	
-	// Step "Loging in with username: {username} and password: {password}."
-	private void login(String username, String password) {
-		System.out.printf("Loging in with username: %s and password: %s", username, password);
+	// Step "Perform search: {query}"
+	private void performSearch(String query) {
+		System.out.printf("performSearch: " + query);
 	}
 	
-	// Step
-	private void verifyUserIsLoggedIn() {
-		System.out.println("User is logged in");
+	// Step "Assert result count: {count}"
+	private void assertResultCount(int count) {
+		System.out.println("assertResultCount: " + count);
 	}
 }

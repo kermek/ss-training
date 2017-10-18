@@ -5,28 +5,38 @@ package com.softserve.ita;
 //import org.testng.annotations.Test;
 
 public class GroupsDependencies {
-	// this should run before group - database
-	public void setupDB() {
-		System.out.println("setupDB()");
+	// this should run before group - email-delivery
+	public void loginToGmail() {
+		System.out.println("loginToGmail");
 	}
 
-	// this should run after group - database
-	public void cleanDB() {
-		System.out.println("cleanDB()");
+	// this should run after group - email-delivery
+	public void cleanUpInbox() {
+		System.out.println("cleanUpInbox");
 	}
 
-	// test belongs to group - selenium-test
-	public void runSelenium1() {
-		System.out.println("runSelenium1()");
+	// test belongs to group - trigger-email
+	public void emailProcessingTest1() {
+		System.out.println("emailProcessingTest1");
+	}
+	
+	// test belongs to group - trigger-email
+	public void emailProcessingTest2() {
+		System.out.println("emailProcessingTest2");
 	}
 
-	// test belongs to group - database
-	public void testConnectOracle() {
-		System.out.println("testConnectOracle()");
+	// test belongs to group - email-delivery
+	public void emailDeliveryTest1() {
+		System.out.println("emailDeliveryTest1");
 	}
+	
+	// test belongs to group - email-delivery
+		public void emailDeliveryTest2() {
+			System.out.println("emailDeliveryTest2");
+		}
 
-	// test that runs after both selenium-test and database group are finished
-	public void runFinal() {
-		System.out.println("runFinal");
+	// test that runs after both email-delivery and trigger-email are finished
+	public void checkEmailQueue() {
+		System.out.println("checkEmailQueue");
 	}
 }

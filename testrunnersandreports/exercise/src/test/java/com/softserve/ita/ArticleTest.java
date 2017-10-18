@@ -11,33 +11,33 @@ import java.nio.file.Paths;
 //
 //import io.qameta.allure.Allure;
 
-public class LoginTest {
+public class ArticleTest {
 
   // this should run before all test methods in this class
-  public void beforeClass() {
-	  System.out.println("Creating new user");
+  public void createArticle() {
+	  System.out.println("Creating new article");
   }
 
   // this should run after all test methods in this class
-  public void afterClass() {
-	  System.out.println("Deleting previously created user");
+  public void deleteArticle() {
+	  System.out.println("Deleting previously created atricle");
   }
   
   // test
-  public void loginWithValidPasswordTest() {
+  public void viewArticleTest() {
 	  System.out.println("First testcase");
 //	  Assert.assertEquals(1, 2);
   }
-  
+    
   // test
-  public void loginWithOldPasswordTest() {
-	  int[] array = null;
-	  System.out.println(array[1]);
+  public void editArticleTest() {
+	  System.out.println("Second testcase");
   }
   
   // test
-  public void loginWithInvalidPasswordTest() {
-	  System.out.println("Second testcase");
+  public void renameArticleTest() {
+	  int[] array = null;
+	  System.out.println(array[1]);
   }
   
   // test
