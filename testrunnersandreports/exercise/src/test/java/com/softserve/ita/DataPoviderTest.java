@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 //import org.testng.annotations.DataProvider;
 //import org.testng.annotations.Test;
 
-public class TestWithDataPovider {
+public class DataPoviderTest {
 	// Data Provider "SearchProvider"
 	public Object[][] getSearchData() {
 		return new Object[][] { 

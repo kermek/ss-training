@@ -1,19 +1,19 @@
 package com.softserve.ita;
 
-import org.testng.annotations.*;
+//import org.testng.annotations.*;
 
-public class LoginTestWithGroups {
-  @Test(groups = "Smoke")
+public class LoginWithGroupsTest {
+  //  Test belongs to group "Smoke"
   public void loginWithValidPasswordTest() {
 	  System.out.println("	First testcase");
   }
   
-  @Test(groups = "Regression")
+  //  Test belongs to group "Regression"
   public void loginWithInvalidPasswordTest() {
 	  System.out.println("Second testcase");
   }
  
-  @Test(groups = { "IEOnly", "Smoke" } )
+  //  Test belongs to groups "Smoke" and "IEOnly"
   public void activeXTest() {
 	  System.out.println("Third testcase");
   }

@@ -3,7 +3,7 @@ package com.softserve.ita;
 //import org.testng.annotations.Parameters;
 //import org.testng.annotations.Test;
 
-public class TestWithParameters {
+public class ParametersTest {
 	// Test with two parameters "username" and "defaultLanguage" and description "This is test description"
 	public void usersDefaultLangugeTest(String username, String defaultLanguage) {
 		System.out.println("User Name is " + username);

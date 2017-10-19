@@ -2,7 +2,7 @@ package com.softserve.ita;
 
 import org.testng.annotations.Test;
 
-public class TestWithPriority {
+public class PriorityTest {
 	@Test(priority = 1)
 	public void testA1() {
 		System.out.println("testA1");

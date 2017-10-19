@@ -4,7 +4,7 @@ import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 
-public class GroupsDependencies {
+public class GroupsDependenciesTest {
 	@BeforeGroups("database")
 	public void setupDB() {
 		System.out.println("setupDB()");

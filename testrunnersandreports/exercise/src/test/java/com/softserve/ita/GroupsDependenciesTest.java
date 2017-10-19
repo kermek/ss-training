@@ -4,7 +4,7 @@ package com.softserve.ita;
 //import org.testng.annotations.BeforeGroups;
 //import org.testng.annotations.Test;
 
-public class GroupsDependencies {
+public class GroupsDependenciesTest {
 	// this should run before group - email-delivery
 	public void loginToGmail() {
 		System.out.println("loginToGmail");

@@ -18,6 +18,10 @@
 <!-- 				<configuration> -->
 <!-- 					<systemPropertyVariables> -->
 <!-- 						<allure.results.directory>target/allure-results</allure.results.directory> -->
+<!-- 						<allure.link.issue.pattern>https://issues.jenkins-ci.org/browse/{}</allure.link.issue.pattern> -->
+<!-- 						<allure.link.tms.pattern>https://issues.jenkins-ci.org/browse/{}</allure.link.tms.pattern> -->
+<!-- 						<username>user</username> -->
+<!-- 						<password>pass1234</password> -->
 <!-- 					</systemPropertyVariables> -->
 <!-- 					<testFailureIgnore>true</testFailureIgnore> -->
 <!-- 					<argLine> -->

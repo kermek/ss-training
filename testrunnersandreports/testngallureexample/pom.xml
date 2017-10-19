@@ -16,16 +16,20 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.20</version>
 				<configuration>
-					<argLine>
-						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-					</argLine>
 					<systemPropertyVariables>
 						<allure.results.directory>target/allure-results</allure.results.directory>
+						<allure.link.issue.pattern>https://issues.jenkins-ci.org/browse/{}</allure.link.issue.pattern>
+						<allure.link.tms.pattern>https://issues.jenkins-ci.org/browse/{}</allure.link.tms.pattern>
+						<username>user</username>
+						<password>pass1234</password>
 					</systemPropertyVariables>
 					<testFailureIgnore>true</testFailureIgnore>
-				    <suiteXmlFiles>
-						<file>testng.xml</file>
-					</suiteXmlFiles>
+<!-- 					<suiteXmlFiles> -->
+<!-- 						<file>testng.xml</file> -->
+<!-- 					</suiteXmlFiles> -->
+					<argLine>
+						 -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+					</argLine>
 				</configuration> 	
 				<dependencies>
 					<dependency>
@@ -47,10 +51,15 @@
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
                 <configuration>
-        			<reportVersion>2.3.1</reportVersion>
+        			<reportVersion>2.2.1</reportVersion>
     			</configuration>
                 <version>2.9</version>
             </plugin>
+            <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>3.0.1</version>
+			</plugin>
 		</plugins>
 	</build>
 	
@@ -65,7 +74,6 @@
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
 			<version>2.0-BETA19</version>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	
